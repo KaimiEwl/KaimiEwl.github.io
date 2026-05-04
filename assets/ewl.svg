@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-label="Nutrition planner preview">
+  <rect width="1200" height="750" fill="#eef8f1"/>
+  <rect x="120" y="80" width="960" height="590" rx="42" fill="#ffffff" stroke="#cbded1" stroke-width="6"/>
+  <rect x="190" y="150" width="310" height="430" rx="28" fill="#0f766e"/>
+  <rect x="540" y="150" width="470" height="72" rx="20" fill="#e8f2ec"/>
+  <rect x="540" y="252" width="470" height="72" rx="20" fill="#e8f2ec"/>
+  <rect x="540" y="354" width="470" height="72" rx="20" fill="#e8f2ec"/>
+  <circle cx="346" cy="288" r="88" fill="#facc15"/>
+  <path d="M280 415h132" stroke="#ffffff" stroke-width="18" stroke-linecap="round"/>
+  <path d="M280 462h90" stroke="#ffffff" stroke-width="18" stroke-linecap="round"/>
+</svg>
+

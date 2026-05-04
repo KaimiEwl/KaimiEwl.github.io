@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-label="Case studies preview">
+  <rect width="1200" height="750" fill="#f8fafc"/>
+  <rect x="145" y="110" width="910" height="530" rx="34" fill="#ffffff" stroke="#cbd5e1" stroke-width="6"/>
+  <rect x="220" y="185" width="300" height="72" rx="18" fill="#0f766e"/>
+  <rect x="220" y="305" width="760" height="32" rx="12" fill="#dbe3dc"/>
+  <rect x="220" y="370" width="680" height="32" rx="12" fill="#dbe3dc"/>
+  <rect x="220" y="435" width="520" height="32" rx="12" fill="#dbe3dc"/>
+  <circle cx="890" cy="220" r="72" fill="#f59e0b"/>
+  <path d="M845 222l30 30 62-70" fill="none" stroke="#ffffff" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

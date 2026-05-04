@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KaimiEwl / AI Automation Portfolio</title>
+  <meta name="description" content="AI automation, video pipelines, Telegram/Web3 products, full-stack prototypes and visual experiments by KaimiEwl.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f766e'/%3E%3Cpath d='M16 38h32M20 26h24' stroke='white' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="#top">KaimiEwl</a>
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#cases">Cases</a>
+        <a href="#proof">Proof</a>
+        <a href="https://github.com/KaimiEwl">GitHub</a>
+      </div>
+    </nav>
+
+    <section class="hero" id="top">
+      <p class="eyebrow">AI automation / full-stack / video / Telegram / Web3</p>
+      <h1>I build AI automation, video pipelines, Telegram/Web3 products, and full-stack prototypes.</h1>
+      <p class="hero-copy">
+        This portfolio is a client-friendly map of real projects: what problem each project solves,
+        what was built, how it works, and where to inspect the code.
+      </p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#projects">View Projects</a>
+        <a class="button" href="https://github.com/KaimiEwl">Open GitHub</a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="proof-strip" id="proof" aria-label="Technical proof">
+      <article>
+        <strong>AI systems</strong>
+        <span>Browser agents, workflow pilots, queue workers and OpenAI integrations.</span>
+      </article>
+      <article>
+        <strong>Product builds</strong>
+        <span>Mobile PWAs, game systems, Telegram bots and Web3 prototypes.</span>
+      </article>
+      <article>
+        <strong>Delivery</strong>
+        <span>Readable READMEs, screenshots, demos, tests and deployable repositories.</span>
+      </article>
+    </section>
+
+    <section class="section-heading" id="projects">
+      <p class="eyebrow">Selected work</p>
+      <h2>Projects people can understand without reading the whole codebase</h2>
+    </section>
+
+    <section class="toolbar" aria-label="Project filters">
+      <button class="filter is-active" data-filter="All">All</button>
+      <button class="filter" data-filter="AI Automation">AI Automation</button>
+      <button class="filter" data-filter="Video">Video</button>
+      <button class="filter" data-filter="Telegram">Telegram</button>
+      <button class="filter" data-filter="Web3">Web3</button>
+      <button class="filter" data-filter="Frontend">Frontend</button>
+      <button class="filter" data-filter="Game / 3D">Game / 3D</button>
+      <button class="filter" data-filter="Case Studies">Case Studies</button>
+    </section>
+
+    <section class="grid" id="projectGrid" aria-live="polite"></section>
+
+    <section class="section-heading" id="cases">
+      <p class="eyebrow">Case studies</p>
+      <h2>Three examples of business value plus technical proof</h2>
+    </section>
+    <section class="case-grid" id="caseGrid"></section>
+
+    <section class="contact" aria-label="Contact">
+      <div>
+        <p class="eyebrow">Next step</p>
+        <h2>Need automation that actually ships?</h2>
+        <p>Use the GitHub repositories to inspect the work, or start with the project cards above to see the shortest path from problem to implementation.</p>
+      </div>
+      <a class="button button-primary" href="https://github.com/KaimiEwl">Review the GitHub portfolio</a>
+    </section>
+  </main>
+
+  <template id="projectCardTemplate">
+    <article class="project-card">
+      <img class="project-image" alt="">
+      <div class="project-body">
+        <div class="project-meta">
+          <span class="category"></span>
+          <span class="status"></span>
+        </div>
+        <h3></h3>
+        <p class="client-summary"></p>
+        <p class="technical-summary"></p>
+        <ul class="stack"></ul>
+        <div class="links">
+          <a class="github" href="#">Read code</a>
+          <a class="live" href="#">Try it</a>
+          <a class="video" href="#">Watch video</a>
+          <a class="case-study" href="#">Case notes</a>
+        </div>
+      </div>
+    </article>
+  </template>
+
+  <template id="caseTemplate">
+    <article class="case-card">
+      <h3></h3>
+      <dl>
+        <dt>Problem</dt>
+        <dd class="problem"></dd>
+        <dt>Result</dt>
+        <dd class="result"></dd>
+        <dt>Proof</dt>
+        <dd class="proof"></dd>
+      </dl>
+    </article>
+  </template>
+
+  <script src="projects.js?v=20260503"></script>
+  <script>
+    const grid = document.querySelector("#projectGrid");
+    const caseGrid = document.querySelector("#caseGrid");
+    const template = document.querySelector("#projectCardTemplate");
+    const caseTemplate = document.querySelector("#caseTemplate");
+    const buttons = [...document.querySelectorAll(".filter")];
+
+    function setLink(anchor, value) {
+      if (!value) {
+        anchor.remove();
+        return;
+      }
+      anchor.href = value;
+    }
+
+    function renderProjects(filter = "All") {
+      grid.innerHTML = "";
+      const projects = window.PORTFOLIO_PROJECTS.filter((project) => {
+        if (filter === "All") return true;
+        return project.category === filter || project.stack.includes(filter);
+      });
+
+      for (const project of projects) {
+        const node = template.content.cloneNode(true);
+        const image = node.querySelector(".project-image");
+        image.src = project.screenshot;
+        image.alt = `${project.title} preview`;
+        node.querySelector("h3").textContent = project.title;
+        node.querySelector(".category").textContent = project.category;
+        node.querySelector(".status").textContent = project.status;
+        node.querySelector(".client-summary").textContent = project.clientSummary;
+        node.querySelector(".technical-summary").textContent = project.technicalSummary;
+
+        const stack = node.querySelector(".stack");
+        for (const item of project.stack) {
+          const li = document.createElement("li");
+          li.textContent = item;
+          stack.appendChild(li);
+        }
+
+        setLink(node.querySelector(".github"), project.githubUrl);
+        setLink(node.querySelector(".live"), project.liveUrl);
+        setLink(node.querySelector(".video"), project.videoUrl);
+        setLink(node.querySelector(".case-study"), project.caseStudyUrl);
+        grid.appendChild(node);
+      }
+    }
+
+    function renderCases() {
+      caseGrid.innerHTML = "";
+      for (const item of window.PORTFOLIO_CASES) {
+        const node = caseTemplate.content.cloneNode(true);
+        node.querySelector(".case-card").id = item.id;
+        node.querySelector("h3").textContent = item.title;
+        node.querySelector(".problem").textContent = item.problem;
+        node.querySelector(".result").textContent = item.result;
+        node.querySelector(".proof").textContent = item.proof;
+        caseGrid.appendChild(node);
+      }
+    }
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        buttons.forEach((item) => item.classList.remove("is-active"));
+        button.classList.add("is-active");
+        renderProjects(button.dataset.filter);
+      });
+    });
+
+    renderProjects();
+    renderCases();
+  </script>
+</body>
+</html>

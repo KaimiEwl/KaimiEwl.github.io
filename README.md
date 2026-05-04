@@ -1,3 +1,11 @@
 # KaimiEwl.github.io
 
-One-page client-friendly portfolio for AI automation, video pipelines, Telegram/Web3 products and full-stack prototypes.
+Public portfolio website:
+
+https://kaimiewl.github.io/
+
+Client-friendly portfolio for working apps, browser games, Telegram bots, websites and business automation.
+
+Source repo:
+
+https://github.com/KaimiEwl/KaimiEwl.github.io

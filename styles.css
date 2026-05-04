@@ -63,6 +63,7 @@ button:focus-visible {
 
 .nav-links,
 .hero-actions,
+.contact-actions,
 .links,
 .stack {
   display: flex;
@@ -81,6 +82,10 @@ button:focus-visible {
   font-size: 14px;
   font-weight: 800;
   transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.contact-actions {
+  justify-content: flex-end;
 }
 
 .nav-links a:hover,

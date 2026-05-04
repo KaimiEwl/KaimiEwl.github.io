@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+  <title id="title">Lina AI Influencer monitor preview</title>
+  <desc id="desc">An AI influencer monitor with helper agents, channel monitoring, post drafting and comment suggestions.</desc>
+  <rect width="1440" height="810" fill="#fdf2f8"/>
+  <rect x="96" y="78" width="1248" height="654" rx="32" fill="#ffffff"/>
+  <text x="166" y="156" fill="#172033" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="900">Lina Monitor</text>
+  <text x="166" y="198" fill="#64748b" font-family="Inter, Arial, sans-serif" font-size="22">AI influencer system with two assistants, channel monitoring and post/comment help.</text>
+
+  <g transform="translate(166 270)">
+    <rect width="330" height="330" rx="28" fill="#831843"/>
+    <circle cx="165" cy="108" r="54" fill="#f9a8d4"/>
+    <rect x="74" y="184" width="182" height="42" rx="21" fill="#fce7f3"/>
+    <rect x="56" y="246" width="218" height="30" rx="15" fill="#fbcfe8"/>
+    <text x="98" y="318" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="900">AI Influencer</text>
+  </g>
+
+  <g transform="translate(560 286)" font-family="Inter, Arial, sans-serif">
+    <rect width="290" height="92" rx="20" fill="#f8fafc" stroke="#dbe2ea"/>
+    <rect y="122" width="290" height="92" rx="20" fill="#f8fafc" stroke="#dbe2ea"/>
+    <text x="30" y="42" fill="#172033" font-size="22" font-weight="900">Assistant A</text>
+    <text x="30" y="68" fill="#64748b" font-size="16">Finds topics and signals</text>
+    <text x="30" y="164" fill="#172033" font-size="22" font-weight="900">Assistant B</text>
+    <text x="30" y="190" fill="#64748b" font-size="16">Drafts posts and comments</text>
+  </g>
+
+  <g transform="translate(910 286)" font-family="Inter, Arial, sans-serif">
+    <rect width="330" height="214" rx="22" fill="#fff7ed" stroke="#fed7aa"/>
+    <text x="30" y="48" fill="#9a3412" font-size="22" font-weight="900">Channel monitoring</text>
+    <text x="30" y="88" fill="#64748b" font-size="17">Waits for useful signals</text>
+    <text x="30" y="122" fill="#64748b" font-size="17">Tracks selected channels</text>
+    <text x="30" y="156" fill="#64748b" font-size="17">Suggests comments and posts</text>
+  </g>
+
+  <g stroke="#db2777" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M500 435h50"/>
+    <path d="M856 392h42"/>
+    <path d="M856 492h42"/>
+  </g>
+</svg>

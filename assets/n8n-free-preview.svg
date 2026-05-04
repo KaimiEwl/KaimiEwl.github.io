@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+  <title id="title">Free n8n automation preview</title>
+  <desc id="desc">A clean operations preview for a second isolated n8n automation server.</desc>
+  <rect width="1440" height="810" fill="#eef2ff"/>
+  <rect x="78" y="74" width="1284" height="662" rx="30" fill="#ffffff"/>
+  <rect x="120" y="122" width="388" height="566" rx="24" fill="#111827"/>
+  <text x="158" y="184" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800">Free n8n Instance</text>
+  <text x="158" y="226" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="18">Separated automation workspace</text>
+
+  <g transform="translate(158 294)">
+    <rect width="278" height="58" rx="14" fill="#1f2937"/>
+    <rect y="82" width="278" height="58" rx="14" fill="#1f2937"/>
+    <rect y="164" width="278" height="58" rx="14" fill="#1f2937"/>
+    <text x="24" y="37" fill="#a7f3d0" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800">Workflows online</text>
+    <text x="24" y="119" fill="#bfdbfe" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800">Experiments isolated</text>
+    <text x="24" y="201" fill="#fde68a" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800">Login protected</text>
+  </g>
+
+  <g transform="translate(572 140)">
+    <text x="0" y="0" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="900">Automation workspace</text>
+    <text x="0" y="42" fill="#64748b" font-family="Inter, Arial, sans-serif" font-size="18">A second self-hosted server for workflows, tests and production separation.</text>
+
+    <g transform="translate(0 108)">
+      <rect width="660" height="92" rx="18" fill="#f8fafc" stroke="#dbe2ea"/>
+      <circle cx="46" cy="46" r="18" fill="#2563eb"/>
+      <text x="86" y="40" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800">Intake automation</text>
+      <text x="86" y="68" fill="#64748b" font-family="Inter, Arial, sans-serif" font-size="16">Forms, messages, leads and events enter a workflow.</text>
+    </g>
+
+    <g transform="translate(0 230)">
+      <rect width="660" height="92" rx="18" fill="#f8fafc" stroke="#dbe2ea"/>
+      <circle cx="46" cy="46" r="18" fill="#0f766e"/>
+      <text x="86" y="40" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800">Decision logic</text>
+      <text x="86" y="68" fill="#64748b" font-family="Inter, Arial, sans-serif" font-size="16">Rules, API calls and AI steps choose the next action.</text>
+    </g>
+
+    <g transform="translate(0 352)">
+      <rect width="660" height="92" rx="18" fill="#f8fafc" stroke="#dbe2ea"/>
+      <circle cx="46" cy="46" r="18" fill="#dc5f5f"/>
+      <text x="86" y="40" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800">Output and reporting</text>
+      <text x="86" y="68" fill="#64748b" font-family="Inter, Arial, sans-serif" font-size="16">Bots, sheets, CRMs and dashboards receive the result.</text>
+    </g>
+  </g>
+</svg>

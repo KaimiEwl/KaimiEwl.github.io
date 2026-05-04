@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+  <title id="title">n8n Codex automation preview</title>
+  <desc id="desc">A dark automation dashboard-style preview with workflow nodes, status cards and server details.</desc>
+  <rect width="1440" height="810" fill="#101827"/>
+  <rect x="72" y="70" width="1296" height="670" rx="28" fill="#f8fafc"/>
+  <rect x="72" y="70" width="1296" height="86" rx="28" fill="#172033"/>
+  <text x="116" y="124" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800">n8n Codex Automation Instance</text>
+  <text x="116" y="200" fill="#334155" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800">Private workflow server</text>
+  <text x="116" y="236" fill="#64748b" font-family="Inter, Arial, sans-serif" font-size="18">Workflows, API connections, monitors and background automations.</text>
+
+  <g transform="translate(116 292)">
+    <rect width="332" height="300" rx="18" fill="#e0f2fe"/>
+    <text x="28" y="54" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800">Workflow lanes</text>
+    <g fill="#ffffff" stroke="#0ea5e9" stroke-width="3">
+      <rect x="28" y="86" width="120" height="54" rx="12"/>
+      <rect x="184" y="86" width="120" height="54" rx="12"/>
+      <rect x="28" y="172" width="120" height="54" rx="12"/>
+      <rect x="184" y="172" width="120" height="54" rx="12"/>
+    </g>
+    <g stroke="#0284c7" stroke-width="4" fill="none" stroke-linecap="round">
+      <path d="M148 113h36"/>
+      <path d="M88 140v32"/>
+      <path d="M148 199h36"/>
+    </g>
+    <text x="55" y="119" fill="#0369a1" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="800">TRIGGER</text>
+    <text x="213" y="119" fill="#0369a1" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="800">AI STEP</text>
+    <text x="61" y="205" fill="#0369a1" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="800">ROUTE</text>
+    <text x="214" y="205" fill="#0369a1" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="800">REPORT</text>
+  </g>
+
+  <g transform="translate(492 292)">
+    <rect width="396" height="300" rx="18" fill="#ecfdf5"/>
+    <text x="28" y="54" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800">Live operations</text>
+    <rect x="28" y="86" width="340" height="54" rx="12" fill="#ffffff"/>
+    <rect x="28" y="158" width="340" height="54" rx="12" fill="#ffffff"/>
+    <rect x="28" y="230" width="340" height="42" rx="12" fill="#ffffff"/>
+    <circle cx="60" cy="113" r="12" fill="#10b981"/>
+    <circle cx="60" cy="185" r="12" fill="#10b981"/>
+    <circle cx="60" cy="251" r="12" fill="#f59e0b"/>
+    <text x="88" y="120" fill="#334155" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">Health endpoint online</text>
+    <text x="88" y="192" fill="#334155" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">Cloudflare route active</text>
+    <text x="88" y="257" fill="#334155" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">Private login required</text>
+  </g>
+
+  <g transform="translate(932 292)">
+    <rect width="344" height="300" rx="18" fill="#fef3c7"/>
+    <text x="28" y="54" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800">Protected data</text>
+    <text x="28" y="96" fill="#64748b" font-family="Inter, Arial, sans-serif" font-size="17">Public portfolio shows the shell.</text>
+    <text x="28" y="126" fill="#64748b" font-family="Inter, Arial, sans-serif" font-size="17">Private workflows stay private.</text>
+    <rect x="28" y="166" width="288" height="64" rx="14" fill="#ffffff"/>
+    <text x="58" y="207" fill="#92400e" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800">NO CREDENTIALS IN GITHUB</text>
+  </g>
+</svg>

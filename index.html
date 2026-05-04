@@ -6,13 +6,14 @@
   <title>KaimiEwl / AI Automation Portfolio</title>
   <meta name="description" content="AI automation, video pipelines, Telegram/Web3 products, full-stack prototypes and visual experiments by KaimiEwl.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f766e'/%3E%3Cpath d='M16 38h32M20 26h24' stroke='white' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20260504-live">
 </head>
 <body>
   <header class="site-header">
     <nav class="nav" aria-label="Primary navigation">
       <a class="brand" href="#top">KaimiEwl</a>
       <div class="nav-links">
+        <a href="#live">Live</a>
         <a href="#projects">Projects</a>
         <a href="#cases">Cases</a>
         <a href="#proof">Proof</a>
@@ -24,11 +25,12 @@
       <p class="eyebrow">AI automation / full-stack / video / Telegram / Web3</p>
       <h1>I build AI automation, video pipelines, Telegram/Web3 products, and full-stack prototypes.</h1>
       <p class="hero-copy">
-        This portfolio is a client-friendly map of real projects: what problem each project solves,
-        what was built, how it works, and where to inspect the code.
+        A client-friendly map of real projects, live deployments and self-hosted automation infrastructure:
+        what each thing does, why it matters, and where to try it.
       </p>
       <div class="hero-actions">
-        <a class="button button-primary" href="#projects">View Projects</a>
+        <a class="button button-primary" href="#live">Open Live Work</a>
+        <a class="button" href="#projects">View Projects</a>
         <a class="button" href="https://github.com/KaimiEwl">Open GitHub</a>
       </div>
     </section>
@@ -50,6 +52,13 @@
       </article>
     </section>
 
+    <section class="section-heading" id="live">
+      <p class="eyebrow">Live now</p>
+      <h2>Working links for clients who want to click before reading code</h2>
+    </section>
+
+    <section class="live-grid" id="liveGrid" aria-label="Live applications and infrastructure"></section>
+
     <section class="section-heading" id="projects">
       <p class="eyebrow">Selected work</p>
       <h2>Projects people can understand without reading the whole codebase</h2>
@@ -63,6 +72,7 @@
       <button class="filter" data-filter="Web3">Web3</button>
       <button class="filter" data-filter="Frontend">Frontend</button>
       <button class="filter" data-filter="Game / 3D">Game / 3D</button>
+      <button class="filter" data-filter="Visual">Visual</button>
       <button class="filter" data-filter="Case Studies">Case Studies</button>
     </section>
 
@@ -106,6 +116,25 @@
     </article>
   </template>
 
+  <template id="liveTemplate">
+    <article class="live-card">
+      <img class="live-image" alt="">
+      <div class="live-body">
+        <div class="live-meta">
+          <span class="status"></span>
+          <span class="kind"></span>
+        </div>
+        <h3></h3>
+        <p class="live-summary"></p>
+        <p class="live-proof"></p>
+        <div class="links">
+          <a class="primary-link" href="#">Open live project</a>
+          <a class="secondary-link" href="#">Read code</a>
+        </div>
+      </div>
+    </article>
+  </template>
+
   <template id="caseTemplate">
     <article class="case-card">
       <h3></h3>
@@ -120,11 +149,13 @@
     </article>
   </template>
 
-  <script src="projects.js?v=20260503"></script>
+  <script src="projects.js?v=20260504-live"></script>
   <script>
     const grid = document.querySelector("#projectGrid");
+    const liveGrid = document.querySelector("#liveGrid");
     const caseGrid = document.querySelector("#caseGrid");
     const template = document.querySelector("#projectCardTemplate");
+    const liveTemplate = document.querySelector("#liveTemplate");
     const caseTemplate = document.querySelector("#caseTemplate");
     const buttons = [...document.querySelectorAll(".filter")];
 
@@ -169,6 +200,26 @@
       }
     }
 
+    function renderLiveSystems() {
+      liveGrid.innerHTML = "";
+      for (const item of window.PORTFOLIO_LIVE_SYSTEMS) {
+        const node = liveTemplate.content.cloneNode(true);
+        const image = node.querySelector(".live-image");
+        image.src = item.screenshot;
+        image.alt = `${item.title} live preview`;
+        node.querySelector("h3").textContent = item.title;
+        node.querySelector(".status").textContent = item.status;
+        node.querySelector(".kind").textContent = item.kind;
+        node.querySelector(".live-summary").textContent = item.summary;
+        node.querySelector(".live-proof").textContent = item.proof;
+        const primary = node.querySelector(".primary-link");
+        primary.href = item.liveUrl;
+        primary.textContent = item.cta;
+        setLink(node.querySelector(".secondary-link"), item.codeUrl);
+        liveGrid.appendChild(node);
+      }
+    }
+
     function renderCases() {
       caseGrid.innerHTML = "";
       for (const item of window.PORTFOLIO_CASES) {
@@ -190,6 +241,7 @@
       });
     });
 
+    renderLiveSystems();
     renderProjects();
     renderCases();
   </script>

@@ -1,3 +1,78 @@
+window.PORTFOLIO_LIVE_SYSTEMS = [
+  {
+    id: "fishing-game-live",
+    title: "Hook & Loot Fishing Game",
+    kind: "Browser game",
+    status: "Live",
+    summary: "A playable fishing game that shows the game loop, rewards, upgrades and browser-ready product packaging.",
+    proof: "Verified live via GitHub Pages. Good first click for non-technical reviewers because it is immediately interactive.",
+    screenshot: "assets/live-fishing.png",
+    liveUrl: "https://kaimiewl.github.io/fishing-game/",
+    codeUrl: "https://github.com/KaimiEwl/fishing-game",
+    cta: "Play Hook & Loot"
+  },
+  {
+    id: "ewl-profile-live",
+    title: "Easy Weight Loss Profile App",
+    kind: "Mobile PWA",
+    status: "Live",
+    summary: "A mobile nutrition/profile flow for weight-loss planning, daily targets and app-like user experience.",
+    proof: "Verified live on GitHub Pages. Shows product UX, mobile navigation and profile-driven state.",
+    screenshot: "assets/live-ewl-profile.png",
+    liveUrl: "https://kaimiewl.github.io/EWL/profile/",
+    codeUrl: "https://github.com/KaimiEwl/ewl-nutrition-pwa",
+    cta: "Open EWL profile"
+  },
+  {
+    id: "nft-miner-live",
+    title: "NFT Miner Deployment",
+    kind: "Web3 game",
+    status: "Live",
+    summary: "A deployed game/product surface running behind Cloudflare on the freen8n infrastructure.",
+    proof: "Verified live on the production domain. Shows deployment, routing and a public game interface beyond local demos.",
+    screenshot: "assets/live-miner.png",
+    liveUrl: "https://dev.freen8n.space/",
+    codeUrl: "https://github.com/KaimiEwl/hookloot-web3-game",
+    cta: "Open NFT Miner"
+  },
+  {
+    id: "lina-monitor-live",
+    title: "Lina Monitor",
+    kind: "Operations UI",
+    status: "Live",
+    summary: "A live monitoring interface for automation/operator visibility instead of blind background scripts.",
+    proof: "Verified live on the n8n Codex domain. Shows monitoring UX for automation work and production observability.",
+    screenshot: "assets/live-lina-monitor.png",
+    liveUrl: "https://n8ncodex.freen8n.space/lina-monitor/",
+    codeUrl: "",
+    cta: "Open Lina Monitor"
+  },
+  {
+    id: "n8n-codex-live",
+    title: "n8n Codex Automation Instance",
+    kind: "Self-hosted n8n",
+    status: "Login-protected",
+    summary: "An isolated self-hosted n8n workspace for Codex-assisted automations and workflow operations.",
+    proof: "Health endpoint verified. Public portfolio links only to the instance shell; private workflows and credentials stay out of GitHub.",
+    screenshot: "assets/live-n8n-codex.png",
+    liveUrl: "https://n8ncodex.freen8n.space/",
+    codeUrl: "https://github.com/KaimiEwl/ai-automation-case-studies",
+    cta: "Open n8n Codex"
+  },
+  {
+    id: "n8n-main-live",
+    title: "Free n8n Automation Instance",
+    kind: "Self-hosted n8n",
+    status: "Login-protected",
+    summary: "A second isolated n8n deployment for workflow experiments, production separation and automation infrastructure.",
+    proof: "Health endpoint verified. Listed as infrastructure proof, not as a public workflow dump.",
+    screenshot: "assets/live-n8n-main.png",
+    liveUrl: "https://freen8n.space/",
+    codeUrl: "https://github.com/KaimiEwl/ai-automation-case-studies",
+    cta: "Open Free n8n"
+  }
+];
+
 window.PORTFOLIO_PROJECTS = [
   {
     id: "ewl-nutrition-pwa",

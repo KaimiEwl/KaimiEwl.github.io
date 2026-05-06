@@ -3,94 +3,160 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>KaimiEwl / Apps, Bots, Games and Automation</title>
-  <meta name="description" content="A clean portfolio of working apps, games, bots, video pipelines and automation systems by KaimiEwl.">
+  <title>KaimiEwl / Working Apps, Games, Bots and Automation</title>
+  <meta name="description" content="Portfolio of working apps, browser games, Telegram bots, AI workers, video pipelines and automation systems by KaimiEwl.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f766e'/%3E%3Cpath d='M16 38h32M20 26h24' stroke='white' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=20260505-clean">
+  <link rel="stylesheet" href="styles.css?v=20260506-portfolio-redesign">
 </head>
 <body>
-  <header class="site-header">
+  <header class="site-header" id="top">
     <nav class="nav" aria-label="Primary navigation">
-      <a class="brand" href="#top">KaimiEwl</a>
+      <a class="brand" href="#top" aria-label="KaimiEwl home">
+        <span class="brand-mark" aria-hidden="true">K</span>
+        <span>KaimiEwl</span>
+      </a>
       <div class="nav-links">
-        <a href="#work">Projects</a>
-        <a href="#services">Services</a>
-        <a href="https://github.com/KaimiEwl">GitHub</a>
+        <a href="#featured">Featured</a>
+        <a href="#work">Work</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#contact">Contact</a>
       </div>
     </nav>
-
-    <section class="hero" id="top">
-      <p class="eyebrow">Working portfolio</p>
-      <h1>Apps, bots, games and automations you can actually open.</h1>
-      <p class="hero-copy">
-        Clear examples of client-facing products, Telegram bots, AI workers,
-        browser games and self-hosted automation. No fake demos, no link dump.
-      </p>
-      <div class="public-link" aria-label="Public portfolio link">
-        <span>Share this link</span>
-        <a href="https://kaimiewl.github.io/">https://kaimiewl.github.io/</a>
-      </div>
-      <div class="hero-actions">
-        <a class="button button-primary" href="#work">Open projects</a>
-        <a class="button" href="https://github.com/KaimiEwl">GitHub portfolio</a>
-        <a class="button" href="#contact">Contact</a>
-      </div>
-    </section>
   </header>
 
   <main>
-    <section class="section-heading" id="work">
-      <p class="eyebrow">Projects</p>
-      <h2>Grouped by the job they solve</h2>
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-overlay"></div>
+      <div class="hero-inner">
+        <p class="eyebrow">Portfolio for real demos</p>
+        <h1 id="heroTitle">Working apps, games, bots and automation systems.</h1>
+        <p class="hero-copy">
+          Public links, clean repositories and short case-study notes for client-facing products,
+          Telegram bots, AI workers, browser games and self-hosted automation.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#featured">View strongest work</a>
+          <a class="button" href="#work">Browse all projects</a>
+          <a class="button" href="https://github.com/KaimiEwl">Open GitHub</a>
+        </div>
+        <dl class="hero-stats" aria-label="Portfolio highlights">
+          <div>
+            <dt>10</dt>
+            <dd>focused public cards</dd>
+          </div>
+          <div>
+            <dt>6</dt>
+            <dd>live demos to open</dd>
+          </div>
+          <div>
+            <dt>4</dt>
+            <dd>work categories</dd>
+          </div>
+        </dl>
+      </div>
     </section>
 
-    <section class="work-groups" id="workGroups" aria-label="Portfolio work"></section>
-
-    <section class="section-heading" id="services">
-      <p class="eyebrow">I can build</p>
-      <h2>Simple outcomes</h2>
+    <section class="intro-band" aria-label="Positioning">
+      <div class="intro-text">
+        <p class="eyebrow">What this page proves</p>
+        <h2>Not a link dump. A working product shelf.</h2>
+      </div>
+      <div class="intro-points">
+        <p>Each project has a clear result, a live link where possible and a public-safe repository or case-study path.</p>
+        <p>Private credentials, workflow secrets, databases, logs and generated media stay out of GitHub.</p>
+      </div>
     </section>
 
-    <section class="service-strip" aria-label="Services">
-      <article>
-        <strong>Launch a working app</strong>
-        <span>Mobile-friendly pages, dashboards, landing pages and small web products.</span>
-      </article>
-      <article>
-        <strong>Automate repeated work</strong>
-        <span>Telegram bots, n8n workflows, AI helpers, reports and background workers.</span>
-      </article>
-      <article>
-        <strong>Test an idea fast</strong>
-        <span>Playable games, visual demos and prototypes that are easy to show.</span>
-      </article>
+    <section class="section" id="featured" aria-labelledby="featuredTitle">
+      <div class="section-header">
+        <p class="eyebrow">Featured work</p>
+        <h2 id="featuredTitle">The strongest examples first</h2>
+        <p>These are the projects that best show product thinking: a user-facing surface, a real flow, and a visible outcome.</p>
+      </div>
+      <div class="featured-grid" id="featuredGrid"></div>
     </section>
 
-    <section class="contact" id="contact" aria-label="Contact">
+    <section class="section section-quiet" id="work" aria-labelledby="workTitle">
+      <div class="section-header">
+        <p class="eyebrow">Project library</p>
+        <h2 id="workTitle">Open the work by type</h2>
+        <p>Use the filters to scan apps, games, bots, workers and automation infrastructure without losing the live links.</p>
+      </div>
+      <div class="filter-bar" aria-label="Project filters">
+        <button class="filter-button is-active" type="button" data-filter="all">All</button>
+        <button class="filter-button" type="button" data-filter="apps">Apps</button>
+        <button class="filter-button" type="button" data-filter="games">Games</button>
+        <button class="filter-button" type="button" data-filter="bots">Bots and workers</button>
+        <button class="filter-button" type="button" data-filter="automation">Automation</button>
+      </div>
+      <div class="work-grid" id="workGrid"></div>
+    </section>
+
+    <section class="section" id="capabilities" aria-labelledby="capabilitiesTitle">
+      <div class="section-header">
+        <p class="eyebrow">Capabilities</p>
+        <h2 id="capabilitiesTitle">What I can ship</h2>
+        <p>The portfolio is organized around outcomes clients understand: launch a surface, automate repeated work, or prove an idea fast.</p>
+      </div>
+      <div class="capability-grid" id="capabilityGrid"></div>
+    </section>
+
+    <section class="process-band" aria-labelledby="processTitle">
+      <div>
+        <p class="eyebrow">How I work</p>
+        <h2 id="processTitle">From messy idea to usable demo</h2>
+      </div>
+      <ol class="process-list">
+        <li>
+          <strong>Define the useful outcome</strong>
+          <span>Pick the screen, bot, workflow or worker that proves the idea fastest.</span>
+        </li>
+        <li>
+          <strong>Build the working path</strong>
+          <span>Create the UI, automation, queue, API or deployment needed for a real test.</span>
+        </li>
+        <li>
+          <strong>Clean the public story</strong>
+          <span>Publish links, screenshots and safe README notes without leaking private runtime data.</span>
+        </li>
+      </ol>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contactTitle">
       <div>
         <p class="eyebrow">Contact</p>
-        <h2>I can build yours</h2>
-        <p>Open the work, check the public code, or use GitHub as the contact point.</p>
+        <h2 id="contactTitle">Open the work, then start from the strongest example.</h2>
+        <p>GitHub is the public contact point for code, demos and portfolio links.</p>
       </div>
       <div class="contact-actions">
-        <a class="button button-primary" href="https://github.com/KaimiEwl">GitHub portfolio</a>
-        <a class="button" href="#work">View projects</a>
-        <a class="button" href="https://github.com/KaimiEwl">Contact me</a>
+        <a class="button button-primary" href="https://github.com/KaimiEwl">GitHub profile</a>
+        <a class="button" href="#featured">Featured work</a>
+        <a class="button" href="https://kaimiewl.github.io/">Share portfolio</a>
       </div>
     </section>
   </main>
 
-  <template id="workGroupTemplate">
-    <section class="work-group">
-      <div class="group-header">
+  <footer class="footer">
+    <span>KaimiEwl</span>
+    <a href="https://kaimiewl.github.io/">kaimiewl.github.io</a>
+    <a href="https://github.com/KaimiEwl">github.com/KaimiEwl</a>
+  </footer>
+
+  <template id="featuredTemplate">
+    <article class="featured-card">
+      <img class="featured-image" alt="">
+      <div class="featured-body">
+        <div class="card-kicker"></div>
         <h3></h3>
-        <p></p>
+        <p class="featured-summary"></p>
+        <dl class="case-notes"></dl>
+        <ul class="stack"></ul>
+        <div class="links"></div>
       </div>
-      <div class="work-grid"></div>
-    </section>
+    </article>
   </template>
 
-  <template id="workCardTemplate">
+  <template id="workTemplate">
     <article class="work-card">
       <img class="work-image" alt="">
       <div class="work-body">
@@ -98,64 +164,123 @@
           <span class="status"></span>
           <span class="kind"></span>
         </div>
-        <h4></h4>
+        <h3></h3>
         <p class="work-summary"></p>
+        <p class="work-result"></p>
         <ul class="stack"></ul>
         <div class="links"></div>
       </div>
     </article>
   </template>
 
-  <script src="projects.js?v=20260505-clean"></script>
+  <template id="capabilityTemplate">
+    <article class="capability-card">
+      <span class="capability-index"></span>
+      <h3></h3>
+      <p></p>
+    </article>
+  </template>
+
+  <script src="projects.js?v=20260506-portfolio-redesign"></script>
   <script>
-    const workGroups = document.querySelector("#workGroups");
-    const groupTemplate = document.querySelector("#workGroupTemplate");
-    const cardTemplate = document.querySelector("#workCardTemplate");
+    const featuredGrid = document.querySelector("#featuredGrid");
+    const workGrid = document.querySelector("#workGrid");
+    const capabilityGrid = document.querySelector("#capabilityGrid");
+    const featuredTemplate = document.querySelector("#featuredTemplate");
+    const workTemplate = document.querySelector("#workTemplate");
+    const capabilityTemplate = document.querySelector("#capabilityTemplate");
 
-    function renderWork() {
-      workGroups.innerHTML = "";
-
-      for (const group of window.PORTFOLIO_WORK_GROUPS) {
-        const groupNode = groupTemplate.content.cloneNode(true);
-        groupNode.querySelector(".group-header h3").textContent = group.title;
-        groupNode.querySelector(".group-header p").textContent = group.summary;
-        const grid = groupNode.querySelector(".work-grid");
-
-        for (const item of group.items) {
-          const node = cardTemplate.content.cloneNode(true);
-          const image = node.querySelector(".work-image");
-          image.src = item.screenshot;
-          image.alt = `${item.title} preview`;
-          node.querySelector("h4").textContent = item.title;
-          node.querySelector(".status").textContent = item.status;
-          node.querySelector(".kind").textContent = item.kind;
-          node.querySelector(".work-summary").textContent = item.summary;
-
-          const stack = node.querySelector(".stack");
-          for (const tag of item.tags) {
-            const li = document.createElement("li");
-            li.textContent = tag;
-            stack.appendChild(li);
-          }
-
-          const links = node.querySelector(".links");
-          for (const link of item.links) {
-            if (!link.url) continue;
-            const anchor = document.createElement("a");
-            anchor.href = link.url;
-            anchor.textContent = link.label;
-            if (link.primary) anchor.className = "is-primary";
-            links.appendChild(anchor);
-          }
-
-          grid.appendChild(node);
-        }
-
-        workGroups.appendChild(groupNode);
+    function addLinks(container, links) {
+      container.innerHTML = "";
+      for (const link of links) {
+        const anchor = document.createElement("a");
+        anchor.href = link.url;
+        anchor.textContent = link.label;
+        if (link.primary) anchor.className = "is-primary";
+        container.appendChild(anchor);
       }
     }
 
+    function addStack(container, tags) {
+      container.innerHTML = "";
+      for (const tag of tags) {
+        const item = document.createElement("li");
+        item.textContent = tag;
+        container.appendChild(item);
+      }
+    }
+
+    function renderFeatured() {
+      featuredGrid.innerHTML = "";
+      for (const item of window.PORTFOLIO_FEATURED) {
+        const node = featuredTemplate.content.cloneNode(true);
+        const image = node.querySelector(".featured-image");
+        image.src = item.image;
+        image.alt = `${item.title} project preview`;
+        node.querySelector(".card-kicker").textContent = item.kicker;
+        node.querySelector("h3").textContent = item.title;
+        node.querySelector(".featured-summary").textContent = item.summary;
+
+        const notes = node.querySelector(".case-notes");
+        for (const note of item.notes) {
+          const term = document.createElement("dt");
+          term.textContent = note.label;
+          const detail = document.createElement("dd");
+          detail.textContent = note.value;
+          notes.append(term, detail);
+        }
+
+        addStack(node.querySelector(".stack"), item.stack);
+        addLinks(node.querySelector(".links"), item.links);
+        featuredGrid.appendChild(node);
+      }
+    }
+
+    function renderWork(filter = "all") {
+      workGrid.innerHTML = "";
+      const items = window.PORTFOLIO_WORK.filter((item) => filter === "all" || item.category === filter);
+      for (const item of items) {
+        const node = workTemplate.content.cloneNode(true);
+        const image = node.querySelector(".work-image");
+        image.src = item.image;
+        image.alt = `${item.title} preview`;
+        node.querySelector(".status").textContent = item.status;
+        node.querySelector(".kind").textContent = item.kind;
+        node.querySelector("h3").textContent = item.title;
+        node.querySelector(".work-summary").textContent = item.summary;
+        node.querySelector(".work-result").textContent = item.result;
+        addStack(node.querySelector(".stack"), item.stack);
+        addLinks(node.querySelector(".links"), item.links);
+        workGrid.appendChild(node);
+      }
+    }
+
+    function renderCapabilities() {
+      capabilityGrid.innerHTML = "";
+      window.PORTFOLIO_CAPABILITIES.forEach((item, index) => {
+        const node = capabilityTemplate.content.cloneNode(true);
+        node.querySelector(".capability-index").textContent = String(index + 1).padStart(2, "0");
+        node.querySelector("h3").textContent = item.title;
+        node.querySelector("p").textContent = item.summary;
+        capabilityGrid.appendChild(node);
+      });
+    }
+
+    function setupFilters() {
+      const buttons = document.querySelectorAll(".filter-button");
+      for (const button of buttons) {
+        button.addEventListener("click", () => {
+          for (const current of buttons) current.classList.remove("is-active");
+          button.classList.add("is-active");
+          renderWork(button.dataset.filter);
+        });
+      }
+    }
+
+    renderFeatured();
     renderWork();
+    renderCapabilities();
+    setupFilters();
   </script>
 </body>
 </html>

@@ -204,13 +204,13 @@ h3 {
 
 .featured-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
+  grid-template-columns: 1fr;
+  gap: 14px;
 }
 
 .featured-card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: minmax(240px, 0.36fr) minmax(0, 1fr);
   overflow: hidden;
   min-width: 0;
   border: 1px solid var(--line);
@@ -222,8 +222,9 @@ h3 {
 .featured-image {
   display: block;
   width: 100%;
-  height: 190px;
-  border-bottom: 1px solid var(--line);
+  height: 100%;
+  min-height: 230px;
+  border-right: 1px solid var(--line);
   background: var(--soft);
   object-fit: contain;
 }
@@ -328,11 +329,13 @@ h3 {
     font-size: 50px;
   }
 
-  .featured-grid {
+  .featured-card {
     grid-template-columns: 1fr;
   }
 
   .featured-image {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
     height: 230px;
   }
 

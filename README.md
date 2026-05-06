@@ -1,8 +1,14 @@
 # KaimiEwl.github.io
 
+[![Deploy to GitHub Pages](https://github.com/KaimiEwl/KaimiEwl.github.io/actions/workflows/pages.yml/badge.svg)](https://github.com/KaimiEwl/KaimiEwl.github.io/actions/workflows/pages.yml)
+
 Public portfolio website for apps, games, bots, AI automation and video pipeline work.
 
 Live site: https://kaimiewl.github.io/
+
+![Portfolio desktop preview](docs/screenshots/portfolio-desktop.png)
+
+![Portfolio mobile preview](docs/screenshots/portfolio-mobile.png)
 
 ## What It Shows
 

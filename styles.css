@@ -32,8 +32,7 @@ a {
   text-decoration: none;
 }
 
-a:focus-visible,
-summary:focus-visible {
+a:focus-visible {
   outline: 3px solid rgba(15, 118, 110, 0.22);
   outline-offset: 3px;
 }
@@ -199,6 +198,10 @@ h3 {
   margin-bottom: 22px;
 }
 
+.section-header-small {
+  margin-bottom: 14px;
+}
+
 .featured-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -256,22 +259,11 @@ h3 {
   padding-top: 18px;
 }
 
-.more-projects {
+.link-list {
+  display: grid;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
-}
-
-.more-projects summary {
-  cursor: pointer;
-  padding: 18px;
-  color: #1d2939;
-  font-weight: 800;
-}
-
-.link-list {
-  display: grid;
-  border-top: 1px solid var(--line);
 }
 
 .link-row {

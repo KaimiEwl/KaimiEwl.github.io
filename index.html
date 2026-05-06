@@ -6,7 +6,7 @@
   <title>KaimiEwl / Portfolio</title>
   <meta name="description" content="Minimal portfolio of selected apps, games, bots and automation work by KaimiEwl.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f766e'/%3E%3Cpath d='M16 38h32M20 26h24' stroke='white' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=20260506-minimal">
+  <link rel="stylesheet" href="styles.css?v=20260506-scroll">
 </head>
 <body>
   <header class="site-header" id="top">
@@ -43,11 +43,12 @@
       <div class="featured-grid" id="featuredGrid"></div>
     </section>
 
-    <section class="section section-compact" aria-label="More project links">
-      <details class="more-projects">
-        <summary>More project links</summary>
-        <div class="link-list" id="linkList"></div>
-      </details>
+    <section class="section section-compact" aria-labelledby="linksTitle">
+      <div class="section-header section-header-small">
+        <p class="eyebrow">More links</p>
+        <h2 id="linksTitle">Extra projects, compact.</h2>
+      </div>
+      <div class="link-list" id="linkList"></div>
     </section>
 
     <section class="contact" id="contact" aria-labelledby="contactTitle">
@@ -91,7 +92,7 @@
     </article>
   </template>
 
-  <script src="projects.js?v=20260506-minimal"></script>
+  <script src="projects.js?v=20260506-scroll"></script>
   <script>
     const featuredGrid = document.querySelector("#featuredGrid");
     const linkList = document.querySelector("#linkList");

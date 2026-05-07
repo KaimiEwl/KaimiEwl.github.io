@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f7f8fc"/>
+      <stop offset="100%" stop-color="#eceff6"/>
+    </linearGradient>
+    <filter id="blurA" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="80"/>
+    </filter>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="44" stroke="#bfc6d6" stroke-opacity=".18" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="1400" fill="url(#bg)"/>
+  <rect width="1600" height="1400" fill="url(#grid)"/>
+  <circle cx="245" cy="440" r="300" fill="#ffd8cf" fill-opacity=".42" filter="url(#blurA)"/>
+  <circle cx="1280" cy="410" r="330" fill="#c8ddff" fill-opacity=".48" filter="url(#blurA)"/>
+  <circle cx="1380" cy="1180" r="250" fill="#ebd2ff" fill-opacity=".42" filter="url(#blurA)"/>
+  <circle cx="540" cy="1060" r="220" fill="#fff4bf" fill-opacity=".22" filter="url(#blurA)"/>
+</svg>

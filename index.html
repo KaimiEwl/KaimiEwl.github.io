@@ -3,63 +3,76 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>KaimiEwl / Portfolio</title>
-  <meta name="description" content="Minimal portfolio of selected apps, games, bots and automation work by KaimiEwl.">
+  <title>KaimiEwl / Liquid Glass Portfolio</title>
+  <meta name="description" content="Liquid-glass style portfolio of selected apps, games, bots and automation work by KaimiEwl.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f766e'/%3E%3Cpath d='M16 38h32M20 26h24' stroke='white' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=20260506-scroll-list">
+  <link rel="stylesheet" href="styles.css?v=20260506-liquid-portfolio">
 </head>
 <body>
   <header class="site-header" id="top">
-    <nav class="nav" aria-label="Primary navigation">
+    <nav class="nav glass-surface" aria-label="Primary navigation">
       <a class="brand" href="#top" aria-label="KaimiEwl home">
         <span class="brand-mark" aria-hidden="true">K</span>
         <span>KaimiEwl</span>
       </a>
       <div class="nav-links">
         <a href="#work">Work</a>
-        <a href="https://github.com/KaimiEwl">GitHub</a>
+        <a href="#more">Links</a>
+        <a href="#contact">Contact</a>
       </div>
     </nav>
   </header>
 
   <main>
-    <section class="hero" aria-labelledby="heroTitle">
-      <p class="eyebrow">Portfolio</p>
-      <h1 id="heroTitle">Apps, bots, games, automation.</h1>
-      <p class="hero-copy">
-        Selected public demos and repositories. Short, working, openable.
-      </p>
-      <div class="hero-actions">
-        <a class="button button-primary" href="#work">View work</a>
-        <a class="button" href="https://github.com/KaimiEwl">Open GitHub</a>
+    <section class="hero glass-board" aria-labelledby="heroTitle">
+      <div class="hero-copy">
+        <p class="eyebrow">Liquid Glass Portfolio</p>
+        <h1 id="heroTitle">Apps, bots, games, automation</h1>
+        <p>
+          Selected public demos and repositories in one clean place. Open the work, then write about the project you want built.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary button-large" href="#contact">Связаться</a>
+          <a class="button button-glass" href="#work">View work</a>
+        </div>
+      </div>
+      <div class="hero-preview glass-panel" aria-label="Portfolio highlights">
+        <span class="hero-chip">Live demos</span>
+        <span class="hero-chip hero-chip-light">Public code</span>
+        <span class="hero-chip hero-chip-warm">Order-ready</span>
+        <img src="assets/liquid-glass.png" alt="Liquid Glass visual style preview">
       </div>
     </section>
 
     <section class="section" id="work" aria-labelledby="workTitle">
       <div class="section-header">
         <p class="eyebrow">Selected work</p>
-        <h2 id="workTitle">The strongest pieces.</h2>
+        <h2 id="workTitle">Strong examples, clean links.</h2>
       </div>
       <div class="featured-grid" id="featuredGrid"></div>
     </section>
 
-    <section class="section section-compact" aria-labelledby="linksTitle">
+    <section class="section" id="more" aria-labelledby="linksTitle">
       <div class="section-header section-header-small">
         <p class="eyebrow">More links</p>
-        <h2 id="linksTitle">Extra projects, compact.</h2>
+        <h2 id="linksTitle">Useful extras, still compact.</h2>
       </div>
       <div class="link-list" id="linkList"></div>
     </section>
 
-    <section class="contact" id="contact" aria-labelledby="contactTitle">
-      <div>
+    <section class="contact glass-board" id="contact" aria-labelledby="contactTitle">
+      <div class="contact-copy">
         <p class="eyebrow">Contact</p>
-        <h2 id="contactTitle">Start from the work.</h2>
-        <p>GitHub has the public code, demos and portfolio links.</p>
+        <h2 id="contactTitle">Хотите заказать похожий проект?</h2>
+        <p>Напишите, что нужно сделать: приложение, Telegram-бот, автоматизация, игра, лендинг или рабочий прототип.</p>
       </div>
-      <div class="contact-actions">
-        <a class="button button-primary" href="https://github.com/KaimiEwl">GitHub profile</a>
-        <a class="button" href="https://kaimiewl.github.io/">Portfolio link</a>
+      <div class="contact-card glass-panel">
+        <a class="button button-primary button-contact" href="https://t.me/KaimiEwl">Связаться</a>
+        <div class="contact-links">
+          <a class="button button-glass" href="mailto:romanroman23041985@gmail.com?subject=Project%20request%20from%20portfolio">Email</a>
+          <a class="button button-glass" href="https://github.com/KaimiEwl">GitHub</a>
+        </div>
+        <p class="contact-note">Telegram: @KaimiEwl<br>Email: romanroman23041985@gmail.com</p>
       </div>
     </section>
   </main>
@@ -71,8 +84,10 @@
   </footer>
 
   <template id="featuredTemplate">
-    <article class="featured-card">
-      <img class="featured-image" alt="">
+    <article class="featured-card glass-panel">
+      <div class="visual-frame">
+        <img class="featured-image" alt="">
+      </div>
       <div class="featured-body">
         <p class="card-kicker"></p>
         <h3></h3>
@@ -83,7 +98,8 @@
   </template>
 
   <template id="linkTemplate">
-    <article class="link-row">
+    <article class="link-row glass-panel">
+      <img class="link-thumb" alt="">
       <div>
         <h3></h3>
         <p></p>
@@ -92,7 +108,7 @@
     </article>
   </template>
 
-  <script src="projects.js?v=20260506-scroll-list"></script>
+  <script src="projects.js?v=20260506-liquid-portfolio"></script>
   <script>
     const featuredGrid = document.querySelector("#featuredGrid");
     const linkList = document.querySelector("#linkList");
@@ -105,6 +121,8 @@
         const anchor = document.createElement("a");
         anchor.href = link.url;
         anchor.textContent = link.label;
+        anchor.rel = "noreferrer";
+        if (link.url.startsWith("http")) anchor.target = "_blank";
         if (link.primary) anchor.className = "is-primary";
         container.appendChild(anchor);
       }
@@ -129,6 +147,9 @@
       linkList.innerHTML = "";
       for (const item of window.PORTFOLIO_LINKS) {
         const node = linkTemplate.content.cloneNode(true);
+        const image = node.querySelector(".link-thumb");
+        image.src = item.image;
+        image.alt = `${item.title} preview`;
         node.querySelector("h3").textContent = item.title;
         node.querySelector("p").textContent = item.summary;
         addLinks(node.querySelector(".links"), item.links);

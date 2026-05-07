@@ -34,6 +34,7 @@ window.PORTFOLIO_LINKS = [
   {
     title: "Liquid Glass Visual Demo",
     summary: "Interactive 3D frontend visual.",
+    image: "assets/liquid-glass.png",
     links: [
       { label: "Demo", url: "https://kaimiewl.github.io/liquid-glass-r3f/", primary: true },
       { label: "Code", url: "https://github.com/KaimiEwl/liquid-glass-r3f" }
@@ -42,6 +43,7 @@ window.PORTFOLIO_LINKS = [
   {
     title: "TGM Coin Bot",
     summary: "Telegram reward and referral bot.",
+    image: "assets/tgm-bot-preview.svg",
     links: [
       { label: "Code", url: "https://github.com/KaimiEwl/tgm-coin-bot", primary: true }
     ]
@@ -49,6 +51,7 @@ window.PORTFOLIO_LINKS = [
   {
     title: "BROAGENTS Browser Runtime",
     summary: "Chrome extension/runtime for coordinating browser agents.",
+    image: "assets/broagents-chrome-preview.svg",
     links: [
       { label: "Code", url: "https://github.com/KaimiEwl/broagents-browser-ai-runtime", primary: true }
     ]
@@ -56,6 +59,7 @@ window.PORTFOLIO_LINKS = [
   {
     title: "Lina Monitor",
     summary: "Live AI workspace monitor connected to private automation.",
+    image: "assets/lina-ai-influencer-preview.svg",
     links: [
       { label: "Open", url: "https://n8ncodex.freen8n.space/lina-monitor/", primary: true }
     ]
@@ -63,6 +67,7 @@ window.PORTFOLIO_LINKS = [
   {
     title: "n8n Codex Instance",
     summary: "Self-hosted automation workspace.",
+    image: "assets/n8n-codex-preview.svg",
     links: [
       { label: "Open", url: "https://n8ncodex.freen8n.space/", primary: true },
       { label: "Notes", url: "https://github.com/KaimiEwl/ai-automation-case-studies" }
@@ -71,6 +76,7 @@ window.PORTFOLIO_LINKS = [
   {
     title: "NFT Miner",
     summary: "Public game/product surface behind Cloudflare.",
+    image: "assets/live-miner.png",
     links: [
       { label: "Open", url: "https://dev.freen8n.space/", primary: true },
       { label: "Code", url: "https://github.com/KaimiEwl/hookloot-web3-game" }

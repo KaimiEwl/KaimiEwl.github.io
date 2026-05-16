@@ -6,7 +6,7 @@
   <title>KaimiEwl / Liquid Glass Portfolio</title>
   <meta name="description" content="Liquid-glass style portfolio of selected apps, games, bots and automation work by KaimiEwl.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f766e'/%3E%3Cpath d='M16 38h32M20 26h24' stroke='white' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=20260506-liquid-portfolio">
+  <link rel="stylesheet" href="styles.css?v=20260516-true-liquid-glass">
 </head>
 <body>
   <header class="site-header" id="top">
@@ -17,6 +17,7 @@
       </a>
       <div class="nav-links">
         <a href="#work">Work</a>
+        <a href="#glass-lab">Glass</a>
         <a href="#more">Links</a>
         <a href="#contact">Contact</a>
       </div>
@@ -50,6 +51,34 @@
         <h2 id="workTitle">Strong examples, clean links.</h2>
       </div>
       <div class="featured-grid" id="featuredGrid"></div>
+    </section>
+
+    <section class="section material-lab" id="glass-lab" aria-labelledby="glassLabTitle">
+      <div class="section-header section-header-small">
+        <p class="eyebrow">Material lab</p>
+        <h2 id="glassLabTitle">A real glass contact panel.</h2>
+      </div>
+      <div class="liquid-lab glass-board" data-liquid-panel>
+        <canvas class="liquid-canvas" id="liquidGlassCanvas" aria-hidden="true"></canvas>
+        <div class="lab-content">
+          <div class="lab-copy">
+            <p class="eyebrow">Experimental</p>
+            <h3>Light, thickness, reflection.</h3>
+            <p>WebGL material layer based on the Digger glass tests, kept as a compact ordering surface.</p>
+            <div class="material-tags" aria-label="Liquid Glass material stack">
+              <span>Transmission</span>
+              <span>IOR</span>
+              <span>PMREM light</span>
+            </div>
+          </div>
+          <div class="floating-contact-card" data-floating-card>
+            <p class="eyebrow">Order</p>
+            <h3>Сделать заказ</h3>
+            <p>Напишите в Telegram, что нужно собрать: приложение, бота, игру, автоматизацию, лендинг или рабочий прототип.</p>
+            <a class="button button-primary button-contact" href="https://t.me/KaimiEwl">Связаться с автором</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="section" id="more" aria-labelledby="linksTitle">
@@ -160,5 +189,6 @@
     renderFeatured();
     renderLinks();
   </script>
+  <script type="module" src="liquid-panel.js?v=20260516-true-liquid-glass"></script>
 </body>
 </html>

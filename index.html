@@ -1,25 +1,31 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>KaimiEwl / Liquid Glass Portfolio</title>
-  <meta name="description" content="Liquid-glass style portfolio of selected apps, games, bots and automation work by KaimiEwl.">
+  <title>KaimiEwl / портфолио</title>
+  <meta name="description" content="Портфолио KaimiEwl: сайты, приложения, игры, боты и автоматизация под заказ.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f766e'/%3E%3Cpath d='M16 38h32M20 26h24' stroke='white' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=20260516-true-liquid-glass">
+  <link rel="stylesheet" href="styles.css?v=20260517-glass-system">
 </head>
 <body>
+  <svg class="svg-filters" aria-hidden="true" focusable="false">
+    <filter id="liquidGlassDisplace">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012 0.018" numOctaves="2" seed="8" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="10" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </svg>
+
   <header class="site-header" id="top">
-    <nav class="nav glass-surface" aria-label="Primary navigation">
+    <nav class="nav glass-surface" aria-label="Основная навигация">
       <a class="brand" href="#top" aria-label="KaimiEwl home">
         <span class="brand-mark" aria-hidden="true">K</span>
         <span>KaimiEwl</span>
       </a>
       <div class="nav-links">
-        <a href="#work">Work</a>
-        <a href="#glass-lab">Glass</a>
-        <a href="#more">Links</a>
-        <a href="#contact">Contact</a>
+        <a href="#work">Работы</a>
+        <a href="#contact">Заказать</a>
+        <a href="#more">Ещё</a>
       </div>
     </nav>
   </header>
@@ -27,44 +33,45 @@
   <main>
     <section class="hero glass-board" aria-labelledby="heroTitle">
       <div class="hero-copy">
-        <p class="eyebrow">Liquid Glass Portfolio</p>
-        <h1 id="heroTitle">Apps, bots, games, automation</h1>
+        <p class="eyebrow">KaimiEwl / разработка под заказ</p>
+        <h1 id="heroTitle">Сайты, боты, игры и автоматизация.</h1>
         <p>
-          Selected public demos and repositories in one clean place. Open the work, then write about the project you want built.
+          Быстро собираю рабочие веб-продукты: от лендинга и Telegram-бота до игровой механики, AI-пайплайна и личного кабинета.
         </p>
         <div class="hero-actions">
-          <a class="button button-primary button-large" href="#contact">Связаться</a>
-          <a class="button button-glass" href="#work">View work</a>
+          <a class="button button-primary button-large" href="#contact">Обсудить проект</a>
+          <a class="button button-glass" href="#work">Смотреть работы</a>
         </div>
       </div>
-      <div class="hero-preview glass-panel" aria-label="Portfolio highlights">
-        <span class="hero-chip">Live demos</span>
-        <span class="hero-chip hero-chip-light">Public code</span>
-        <span class="hero-chip hero-chip-warm">Order-ready</span>
+      <div class="hero-preview" aria-label="Portfolio highlights">
+        <span class="hero-chip">Живые демо</span>
+        <span class="hero-chip hero-chip-light">Публичный код</span>
+        <span class="hero-chip hero-chip-warm">Связь в Telegram</span>
         <img src="assets/liquid-glass.png" alt="Liquid Glass visual style preview">
       </div>
     </section>
 
     <section class="section" id="work" aria-labelledby="workTitle">
       <div class="section-header">
-        <p class="eyebrow">Selected work</p>
-        <h2 id="workTitle">Strong examples, clean links.</h2>
+        <p class="eyebrow">Работы</p>
+        <h2 id="workTitle">Три сильных примера, без лишнего шума.</h2>
       </div>
       <div class="featured-grid" id="featuredGrid"></div>
     </section>
 
-    <section class="section material-lab" id="glass-lab" aria-labelledby="glassLabTitle">
+    <section class="section material-lab" id="contact" aria-labelledby="glassLabTitle">
+      <span class="anchor-target" id="glass-lab" aria-hidden="true"></span>
       <div class="section-header section-header-small">
-        <p class="eyebrow">Material lab</p>
-        <h2 id="glassLabTitle">A real glass contact panel.</h2>
+        <p class="eyebrow">Связаться</p>
+        <h2 id="glassLabTitle">Главное действие: написать и заказать.</h2>
       </div>
-      <div class="liquid-lab glass-board" data-liquid-panel>
+      <div class="liquid-lab" data-liquid-panel>
         <canvas class="liquid-canvas" id="liquidGlassCanvas" aria-hidden="true"></canvas>
         <div class="lab-content">
           <div class="lab-copy">
-            <p class="eyebrow">Experimental</p>
-            <h3>Light, thickness, reflection.</h3>
-            <p>WebGL material layer based on the Digger glass tests, kept as a compact ordering surface.</p>
+            <p class="eyebrow">Liquid Glass CTA</p>
+            <h3>Стеклянная панель поверх сайта.</h3>
+            <p>Фон остаётся видимым, блок парит над ним, а WebGL-слой даёт толщину, отражения и движение света.</p>
             <div class="material-tags" aria-label="Liquid Glass material stack">
               <span>Transmission</span>
               <span>IOR</span>
@@ -72,10 +79,11 @@
             </div>
           </div>
           <div class="floating-contact-card" data-floating-card>
-            <p class="eyebrow">Order</p>
-            <h3>Сделать заказ</h3>
-            <p>Напишите в Telegram, что нужно собрать: приложение, бота, игру, автоматизацию, лендинг или рабочий прототип.</p>
-            <a class="button button-primary button-contact" href="https://t.me/KaimiEwl">Связаться с автором</a>
+            <p class="eyebrow">Заказ</p>
+            <h3>Сделать проект</h3>
+            <p>Напишите в Telegram, что нужно собрать: сайт, приложение, бота, игру, автоматизацию или рабочий прототип.</p>
+            <a class="button button-primary button-contact" href="https://t.me/KaimiEwl">Написать в Telegram</a>
+            <p class="contact-note">Telegram: @KaimiEwl<br>Email: romanroman23041985@gmail.com</p>
           </div>
         </div>
       </div>
@@ -83,26 +91,10 @@
 
     <section class="section" id="more" aria-labelledby="linksTitle">
       <div class="section-header section-header-small">
-        <p class="eyebrow">More links</p>
-        <h2 id="linksTitle">Useful extras, still compact.</h2>
+        <p class="eyebrow">Ещё</p>
+        <h2 id="linksTitle">Дополнительные ссылки для тех, кто хочет глубже.</h2>
       </div>
       <div class="link-list" id="linkList"></div>
-    </section>
-
-    <section class="contact glass-board" id="contact" aria-labelledby="contactTitle">
-      <div class="contact-copy">
-        <p class="eyebrow">Contact</p>
-        <h2 id="contactTitle">Хотите заказать похожий проект?</h2>
-        <p>Напишите, что нужно сделать: приложение, Telegram-бот, автоматизация, игра, лендинг или рабочий прототип.</p>
-      </div>
-      <div class="contact-card glass-panel">
-        <a class="button button-primary button-contact" href="https://t.me/KaimiEwl">Связаться</a>
-        <div class="contact-links">
-          <a class="button button-glass" href="mailto:romanroman23041985@gmail.com?subject=Project%20request%20from%20portfolio">Email</a>
-          <a class="button button-glass" href="https://github.com/KaimiEwl">GitHub</a>
-        </div>
-        <p class="contact-note">Telegram: @KaimiEwl<br>Email: romanroman23041985@gmail.com</p>
-      </div>
     </section>
   </main>
 
@@ -137,7 +129,7 @@
     </article>
   </template>
 
-  <script src="projects.js?v=20260506-liquid-portfolio"></script>
+  <script src="projects.js?v=20260517-glass-system"></script>
   <script>
     const featuredGrid = document.querySelector("#featuredGrid");
     const linkList = document.querySelector("#linkList");
@@ -189,6 +181,6 @@
     renderFeatured();
     renderLinks();
   </script>
-  <script type="module" src="liquid-panel.js?v=20260516-true-liquid-glass"></script>
+  <script type="module" src="liquid-panel.js?v=20260517-glass-system"></script>
 </body>
 </html>
